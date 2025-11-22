@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahabat Tani Alpukat</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #4CAF50, #81C784); /* Gradien hijau aesthetic */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2E7D32; /* Hijau gelap */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #388E3C; /* Hijau sedang */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #66BB6A; /* Hijau terang saat hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Putih transparan */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2E7D32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        .button:hover {
+            background-color: #388E3C;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .diagnosis-form {
+            margin-top: 20px;
+        }
+        .diagnosis-form label {
+            display: block;
+            margin: 10px 0;
+        }
+        .diagnosis-result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #E8F5E8;
+            border-radius: 5px;
+            border-left: 5px solid #4CAF50;
+        }
+        .diagnosis-result h3 {
+            margin-top: 0;
+        }
+        .diagnosis-result ul {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E7D32;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sahabat Tani Alpukat</h1>
+        <p>Panduan Lengkap Gejala Penyakit pada Pohon</p>
+    </header>
+    
+    <nav>
+        <a href="#pohon">Penyakit pada Pohon Alpukat</a>
+        <a href="#diagnosis">Diagnosis Penyakit</a>
+        <a href="#tips">Tips Pencegahan</a>
+    </nav>
+    
+    <div class="container">
+        <section id="pohon" class="section">
+            <h2>Penyakit pada Pohon Alpukat</h2>
+            <p>Berikut adalah gejala penyakit umum pada pohon alpukat. Klik tombol untuk detail lebih lanjut.</p>
+            <ul>
+                <li><strong>Phytophthora Root Rot (Busuk Akar):</strong> Daun menguning, layu, dan pohon mati secara bertahap. Akar membusuk.</li>
+                <li><strong>Anthracnose (Antraknosa):</strong> Bercak hitam pada daun, cabang, dan buah. Daun rontok.</li>
+                <li><strong>Cercospora Leaf Spot (Bercak Daun Cercospora):</strong> Bercak bulat coklat pada daun, menyebabkan defoliasi.</li>
+                <li><strong>Verticillium Wilt (Layu Verticillium):</strong> Layu daun secara mendadak, pembuluh batang menghitam.</li>
+                <li><strong>Avocado Sunblotch Viroid (Sunblotch):</strong> Bercak kuning pada daun, deformasi daun dan buah.</li>
+                <li><strong>Root Knot Nematode (Nematoda Akar):</strong> Pertumbuhan terhambat, akar bengkak seperti benjolan.</li>
+            </ul>
+            <a href="#detail-pohon" class="button" onclick="scrollToSection('detail-pohon')">Lihat Detail Penyakit Pohon</a>
+        </section>
+        
+        <section id="detail-pohon" class="section" style="display: none;">
+            <h3>Detail Penyakit pada Pohon Alpukat</h3>
+            <p><strong>Phytophthora Root Rot:</strong> Disebabkan oleh jamur Phytophthora. Pencegahan: Drainase baik, hindari genangan air.</p>
+            <p><strong>Anthracnose:</strong> Disebabkan oleh jamur Colletotrichum. Pencegahan: Semprot fungisida.</p>
+            <p><strong>Cercospora Leaf Spot:</strong> Disebabkan oleh jamur Cercospora. Pencegahan: Pemangkasan cabang yang terinfeksi.</p>
+            <p><strong>Verticillium Wilt:</strong> Disebabkan oleh jamur Verticillium. Pencegahan: Rotasi tanaman, hindari tanah terinfeksi.</p>
+            <p><strong>Avocado Sunblotch Viroid:</strong> Disebabkan oleh viroid. Pencegahan: Gunakan bibit sehat, hindari pemangkasan dengan alat terkontaminasi.</p>
+            <p><strong>Root Knot Nematode:</strong> Disebabkan oleh nematoda. Pencegahan: Fumigasi tanah, gunakan nematoda predator.</p>
+            <a href="#pohon" class="button" onclick="scrollToSection('pohon')">Kembali ke Daftar</a>
+        </section>
+        
+        <section id="diagnosis" class="section">
+            <h2>Diagnosis Penyakit Alpukat (Fokus Pohon)</h2>
+            <p>Jawab pertanyaan berikut berdasarkan gejala yang Anda lihat pada pohon alpukat. Pilih gejala yang sesuai, lalu klik "Diagnosa" untuk mendapatkan kemungkinan penyakit dengan skor kecocokan. Sistem ini lebih lengkap dengan logika kecocokan gejala.</p>
+            <div class="diagnosis-form">
+                <label><input type="checkbox" id="gejala1"> Daun menguning dan layu</label>
+                <label><input type="checkbox" id="gejala2"> Akar membusuk</label>
+                <label><input type="checkbox" id="gejala3"> Bercak hitam pada daun atau cabang</label>
+                <label><input type="checkbox" id="gejala4"> Bercak bulat coklat pada daun</label>
+                <label><input type="checkbox" id="gejala5"> Layu mendadak pada cabang</label>
+                <label><input type="checkbox" id="gejala6"> Pembuluh batang menghitam (saat dipotong)</label>
+                <label><input type="checkbox" id="gejala7"> Bercak kuning atau deformasi daun</label>
+                <label><input type="checkbox" id="gejala8"> Pertumbuhan pohon terhambat</label>
+                <label><input type="checkbox" id="gejala9"> Akar bengkak seperti benjolan</label>
+                <label><input type="checkbox" id="gejala10"> Daun rontok secara berlebihan</label>
+                <button class="button" onclick="diagnoseDisease()">Diagnosa Penyakit</button>
+                <button class="button" onclick="resetDiagnosis()">Reset</button>
+            </div>
+            <div id="diagnosis-result" class="diagnosis-result" style="display: none;"></div>
+        </section>
+        
+        <section id="tips" class="section">
+            <h2>Tips Pencegahan Penyakit Alpukat</h2>
+            <ul>
+                <li>Pastikan drainase tanah baik untuk menghindari genangan air.</li>
+                <li>Gunakan pupuk organik dan hindari penggunaan pestisida berlebihan.</li>
+                <li>Periksa pohon secara rutin dan pangkas cabang yang sakit.</li>
+                <li>Panen buah saat matang untuk mencegah penyebaran penyakit.</li>
+                <li>Gunakan bibit sehat dan lakukan rotasi tanaman untuk mencegah penyakit kronis.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Sahabat Tani Alpukat.</p>
+    </footer>
+    
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = section.style.display === 'none' ? 'block' : 'none';
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Data penyakit dengan gejala terkait (array ID gejala)
+        const diseases = [
+            {
+                name: "Phytophthora Root Rot (Busuk Akar)",
+                symptoms: ["gejala1", "gejala2", "gejala8"],
+                prevention: "Perbaiki drainase, hindari genangan air, gunakan fungisida."
+            },
+            {
+                name: "Anthracnose (Antraknosa)",
+                symptoms: ["gejala3", "gejala10"],
+                prevention: "Semprot fungisida, pangkas bagian terinfeksi."
+            },
+            {
+                name: "Cercospora Leaf Spot (Bercak Daun Cercospora)",
+                symptoms: ["gejala4", "gejala10"],
+                prevention: "Pangkas daun terinfeksi, gunakan fungisida."
+            },
+            {
+                name: "Verticillium Wilt (Layu Verticillium)",
+                symptoms: ["gejala1", "gejala5", "gejala6"],
+                prevention: "Rotasi tanaman, hindari tanah terinfeksi."
+            },
+            {
+                name: "Avocado Sunblotch Viroid (Sunblotch)",
+                symptoms: ["gejala7", "gejala8"],
+                prevention: "Gunakan bibit sehat, hindari alat terkontaminasi."
+            },
+            {
+                name: "Root Knot Nematode (Nematoda Akar)",
+                symptoms: ["gejala8", "gejala9"],
+                prevention: "Fumigasi tanah, gunakan nematoda predator."
+            }
+        ];
+
+        function diagnoseDisease() {
+            const selectedSymptoms = [];
+            for (let i = 1; i <= 10; i++) {
+                const cb = document.getElementById(`gejala${i}`);
+                if (cb.checked) selectedSymptoms.push(cb.id);
+            }
+
+            if (selectedSymptoms.length === 0) {
+                document.getElementById('diagnosis-result').innerHTML = "<h3>Hasil Diagnosis:</h3><p>Silakan pilih setidaknya satu gejala.</p>";
+                document.getElementById('diagnosis-result').style.display = 'block';
+                return;
+            }
+
+            // Hitung kecocokan untuk setiap penyakit
+            const results = diseases.map(disease => {
+                const matched = disease.symptoms.filter(sym => selectedSymptoms.includes(sym)).length;
+                const total = disease.symptoms.length;
+                const score = total > 0 ? Math.round((matched / total) * 100) : 0;
+                return { ...disease, score, matched };
+            }).filter(result => result.score > 0).sort((a, b) => b.score - a.score);
+
+            let resultHTML = "<h3>Hasil Diagnosis:</h3>";
+            if (results.length === 0) {
+                resultHTML += "<p>Tidak ada penyakit yang cocok dengan gejala yang dipilih. Periksa kembali atau konsultasikan dengan ahli.</p>";
+            } else {
+                resultHTML += "<ul>";
+                results.forEach(result => {
+                    resultHTML += `<li><strong>${result.name}</strong> (Kecocokan: ${result.score}%) - Pencegahan: ${result.prevention}</li>`;
+                });
+                resultHTML += "</ul><p><em>Catatan: Ini adalah diagnosis awal berdasarkan gejala. Untuk konfirmasi, lakukan tes laboratorium.</em></p>";
+            }
+
+            document.getElementById('diagnosis-result').innerHTML = resultHTML;
+            document.getElementById('diagnosis-result').style.display = 'block';
+            document.getElementById('diagnosis-result').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetDiagnosis() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            document.getElementById('diagnosis-result').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
